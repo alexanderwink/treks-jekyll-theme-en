@@ -1,5 +1,5 @@
 url: https://www.treks.se
-baseurl: /sv
+baseurl: /en
 
 # Site settings
 title: Treks
@@ -11,7 +11,7 @@ description: ""
 people:
 - name: Michael Walenius
   pic: 1
-  position: Försäljning och Marknadsföring
+  position: Sales & Marketing
   social:
     - title: twitter
       url: https://twitter.com/StorWalle
@@ -20,7 +20,7 @@ people:
 
 - name: Alexander Winkler
   pic: 2
-  position: Lead Developer & Arkitekt
+  position: Lead Developer & Architect
   social:
     - title: twitter
       url: https://twitter.com/alexanderwink
@@ -29,7 +29,7 @@ people:
 
 - name: Niklas Ottosson
   pic: 3
-  position: Utvecklare
+  position: Developer
   social:
     - title: twitter
       url: https://twitter.com/NiklasOttosson
@@ -44,7 +44,7 @@ social:
 # Postal address (add as many lines as necessary)
 address:
   - line: Bottnevägen 16B
-  - line: 423 50 Torslanda
+  - line: 423 50 Torslanda, Sweden
 
 # Build settings
 markdown: kramdown
