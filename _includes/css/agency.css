@@ -175,6 +175,8 @@ fieldset[disabled] .btn-xl.active {
     background-color: #222;
 }
 
+
+
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #{{ site.data.template.color.primary }};
@@ -263,6 +265,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 header {
+    height: 750px;
     text-align: center;
     color: #fff;
     background-attachment: scroll;
@@ -290,7 +293,6 @@ header .intro-text .intro-lead-in {
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
-    text-transform: uppercase;
     font-family: {{ site.data.template.font.primary }};
     font-size: 50px;
     font-weight: 700;
@@ -299,25 +301,30 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 170px;
         padding-bottom: 200px;
     }
 
     header .intro-text .intro-lead-in {
+        text-align: left;
         margin-bottom: 25px;
         font-family: {{ site.data.template.font.secondary }};
-        font-size: 40px;
+        font-size: 20px;
         font-style: italic;
         line-height: 40px;
     }
 
     header .intro-text .intro-heading {
-        margin-bottom: 50px;
-        text-transform: uppercase;
+        text-align: left;
+        margin-bottom: 20px;
         font-family: {{ site.data.template.font.primary }};
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
+    }
+
+    header .intro-text a {
+      float: left;
     }
 }
 
@@ -329,6 +336,10 @@ section h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
+}
+
+section#portfolio h3.section-subheading {
+  margin-bottom: 15px;
 }
 
 section h3.section-subheading {
@@ -344,6 +355,14 @@ section h3.section-subheading {
     section {
         padding: 150px 0;
     }
+}
+
+.features-box {
+  margin-bottom: 75px;
+}
+
+.features-box .fa {
+  margin-top: 15px;
 }
 
 .service-heading {
@@ -635,6 +654,7 @@ section h3.section-subheading {
 }
 
 .team-member img {
+    width: 150px;
     margin: 0 auto;
     border: 7px solid #fff;
 }
