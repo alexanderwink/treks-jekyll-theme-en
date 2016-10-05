@@ -8,3 +8,21 @@ layout: style
 .navbar-brand {
   padding-top: 0px;
 }
+
+.feature-even {
+  float: none;
+}
+
+.feature-odd {
+  float: none;
+}
+
+@media(min-width:768px) {
+  .feature-even {
+    float: left;
+  }
+
+  .feature-odd {
+    float: right;
+  }
+}
