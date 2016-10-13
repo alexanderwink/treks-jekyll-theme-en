@@ -17,6 +17,11 @@ layout: style
   float: none;
 }
 
+.slash-command {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 @media(min-width:768px) {
   .feature-even {
     float: left;
