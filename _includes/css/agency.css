@@ -454,6 +454,35 @@ section h3.section-subheading {
     z-index: 2;
 }
 
+#pricing .pricing-box {
+  border: 1px solid #cccccc;
+  width: 300px;
+  display: inline-block;
+  margin: 20px;
+}
+
+#pricing .price-push h1 {
+  border: 0px;
+}
+
+#pricing .price-push {
+  border-top: 1px solid #cccccc;
+  height: 120px;
+}
+
+#pricing .pricing-box h4 {
+  line-height: 60px;
+}
+
+#pricing .pricing-box h1 {
+  line-height: 40px;
+}
+
+#pricing .pricing-box div.text-muted {
+  height: 200px;
+}
+
+
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
