@@ -20,20 +20,20 @@
                 <p class="text-muted">
                   Add our app to your Slack. Click the button
                   <br/><br/>
-                  <a href="https://slack.com/oauth/authorize?scope=incoming-webhook,commands,bot,users:read&client_id=2536292111.80582006774"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" /></a>
+                  <div class="slackbutton"><a href="https://slack.com/oauth/authorize?scope=incoming-webhook,commands,bot,users:read&client_id=2536292111.80582006774"><img src="{{ "/img/Slack_Mark_Web.png" | prepend: site.baseurl }}">Add Treks to Slack</a></div>
                 </p>
 
                 <br/>
-                <h3 style="margin-bottom: 30px;">Slash commands</h3>
+                <h3 style="margin-bottom: 30px;">Chat commands</h3>
 
                 <div class="row slash-command">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
                       <div class="row">
-                          <div class="col-lg-3 text-primary text-left">
-                            /treks ?
+                          <div class="col-lg-5 text-primary text-left">
+                            help
                           </div>
-                          <div class="col-lg-9 text-muted text-left">
+                          <div class="col-lg-7 text-muted text-left">
                             Displays usage information. Basically it's the same as you're reading here.
                           </div>
                       </div>
@@ -45,26 +45,11 @@
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
                       <div class="row">
-                          <div class="col-lg-3 text-primary text-left">
-                            /treks today ?
+                          <div class="col-lg-5 text-primary text-left">
+                            log
                           </div>
-                          <div class="col-lg-9 text-muted text-left">
-                            Displays the reported time for today.
-                          </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-2"></div>
-                </div>
-
-                <div class="row slash-command">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8">
-                      <div class="row">
-                          <div class="col-lg-3 text-primary text-left">
-                            /treks today n
-                          </div>
-                          <div class="col-lg-9 text-muted text-left">
-                            Where n is the total amount of hours you want to report for today. Your most recently used project will be used.
+                          <div class="col-lg-7 text-muted text-left">
+                            Log today's hours. The bot will ask you for hours and project.
                           </div>
                       </div>
                     </div>
@@ -75,26 +60,11 @@
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
                       <div class="row">
-                          <div class="col-lg-3 text-primary text-left">
-                            /treks yesterday ?
+                          <div class="col-lg-5 text-primary text-left">
+                            log &lt;yymmdd|mmdd|dd&gt; &lt;hours&gt; &lt;project&gt;
                           </div>
-                          <div class="col-lg-9 text-muted text-left">
-                            Displays the reported time for yesterday.
-                          </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-2"></div>
-                </div>
-
-                <div class="row slash-command">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8">
-                      <div class="row">
-                          <div class="col-lg-3 text-primary text-left">
-                            /treks yesterday n
-                          </div>
-                          <div class="col-lg-9 text-muted text-left">
-                            Where n is the total amount of hours you want to report for yesterday. Your most recently used project will be used.
+                          <div class="col-lg-7 text-muted text-left">
+                            Log hours on the specific date and project.
                           </div>
                       </div>
                     </div>
@@ -105,11 +75,11 @@
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
                       <div class="row">
-                          <div class="col-lg-3 text-primary text-left">
-                            /treks lock
+                          <div class="col-lg-5 text-primary text-left">
+                            log &lt;hours&gt; &lt;project&gt;
                           </div>
-                          <div class="col-lg-9 text-muted text-left">
-                            Lock the period. If previous period is not locked this will be locked first.
+                          <div class="col-lg-7 text-muted text-left">
+                            Log today's hours on a specific project.
                           </div>
                       </div>
                     </div>
@@ -120,11 +90,71 @@
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
                       <div class="row">
-                          <div class="col-lg-3 text-primary text-left">
-                            /treks unlock
+                          <div class="col-lg-5 text-primary text-left">
+                            log &lt;hours&gt;
                           </div>
-                          <div class="col-lg-9 text-muted text-left">
-                            Unlock the period. If current period is unlocked then the previous period will be unlocked.
+                          <div class="col-lg-7 text-muted text-left">
+                            Log today's hours. The bot will ask you for the project.
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+
+                <div class="row slash-command">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                      <div class="row">
+                          <div class="col-lg-5 text-primary text-left">
+                            lock
+                          </div>
+                          <div class="col-lg-7 text-muted text-left">
+                            Lock the period.
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+
+                <div class="row slash-command">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                      <div class="row">
+                          <div class="col-lg-5 text-primary text-left">
+                            unlock
+                          </div>
+                          <div class="col-lg-7 text-muted text-left">
+                            Unlock the period.
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+
+                <div class="row slash-command">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                      <div class="row">
+                          <div class="col-lg-5 text-primary text-left">
+                            list | list projects
+                          </div>
+                          <div class="col-lg-7 text-muted text-left">
+                            List all available projects available to you for logging hours.
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+
+                <div class="row slash-command">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                      <div class="row">
+                          <div class="col-lg-5 text-primary text-left">
+                            cancel
+                          </div>
+                          <div class="col-lg-7 text-muted text-left">
+                            Stop what you're doing.
                           </div>
                       </div>
                     </div>

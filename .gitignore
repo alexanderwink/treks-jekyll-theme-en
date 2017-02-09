@@ -1,2 +1,3 @@
 publish.sh
 _site
+upload_s3.sh
