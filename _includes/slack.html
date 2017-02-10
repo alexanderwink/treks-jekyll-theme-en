@@ -8,11 +8,24 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 text-center">
+            <div class="col-lg-2 text-center"></div>
+            <div class="col-lg-8 text-center">
                 <p class="text-muted">
                   By integrating Treks and Slack you can take advantage of some extra features for your team.
                   The Slack app is a companion to our service. With our app you can enter and edit your daily hours from within Slack.
                   You can also lock the period and receive reminders when you've forgotten to do so.
+                </p>
+                <p class="text-muted">
+                  <strong>So how does it work?</strong> Well, every day of work the bot will ask you at the end of the day what you've been working on. In most cases it will first ask you
+                  for the amount of hours, simple enter the number in the chat. The bot might then ask you for the name of the project you worked on, just type the project name in the chat.
+                  Finally the bot will confirm that the hours have been saved and show a small summary of the times entered for that day.
+                </p>
+                <p class="text-muted">
+                  <video autoplay loop muted poster="" id="background" width="400" class="">
+                     <source src="{{ "/img/slack_intg.mp4" | prepend: site.baseurl }}" type="video/mp4">
+                     <source src="{{ "/img/slack_intg.webm" | prepend: site.baseurl }}" type="video/webm">
+                     <source src="{{ "/img/slack_intg.ogv" | prepend: site.baseurl }}" type="video/ogg">
+                  </video>
                 </p>
                 <p class="text-muted">
                   We're constantly adding more features to our Slack app. Watch this page for more information.
@@ -25,6 +38,11 @@
 
                 <br/>
                 <h3 style="margin-bottom: 30px;">Chat commands</h3>
+                <p class="text-muted">
+                  You can order the bot around if you want to. Here are a list of command you can send to the bot and it will perform and respond to your actions.
+                </p>
+
+                <div class="row"></div>
 
                 <div class="row slash-command">
                     <div class="col-lg-2"></div>
@@ -162,6 +180,7 @@
                 </div>
 
             </div>
+            <div class="col-lg-2 text-center"></div>
         </div>
     </div>
 </section>
