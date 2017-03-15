@@ -15,11 +15,17 @@
                   The Slack app is a companion to our service. With our app you can enter and edit your daily hours from within Slack.
                   You can also lock the period and receive reminders when you've forgotten to do so.
                 </p>
+
                 <p class="text-muted">
                   <strong>So how does it work?</strong> Well, every day of work the bot will ask you at the end of the day what you've been working on. In most cases it will first ask you
                   for the amount of hours, simple enter the number in the chat. The bot might then ask you for the name of the project you worked on, just type the project name in the chat.
-                  Finally the bot will confirm that the hours have been saved and show a small summary of the times entered for that day.
+                  Finally the bot will confirm that the hours have been saved and show a summary of the times entered for that day.
                 </p>
+
+                <p class="text-muted">
+		  In order for all this to work you must have the same email entered in Treks and in Slack. This is how we link your accounts together. 
+                </p>
+
                 <p class="text-muted">
                   <video autoplay loop muted poster="" id="background" width="400" class="">
                      <source src="{{ "/img/slack_intg.mp4" | prepend: site.baseurl }}" type="video/mp4">
